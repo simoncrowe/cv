@@ -1,78 +1,82 @@
 % LaTeX resume using res.cls
-\documentclass[line,margin]{res} 
+\documentclass[line,margin]{res}
 \usepackage{hyperref}
 \renewcommand{\familydefault}{\sfdefault}
 \hypersetup{colorlinks=true, urlcolor=cyan}
 
 
 \begin{document}
-\name{Simon Crowe | Software Engineer}
-% \address can be used twice for additional contact info 
+\name{Simon Crowe | Backend Software Engineer}
+% \address can be used twice for additional contact info
 \address{\href{mailto://simon.r.crowe@protonmail.com}{simon.r.crowe@protonmail.com}}
 
- 
+
 \begin{resume}
- 
+
 \section{SUMMARY} As an experienced backend engineer, I take ownership of features,\
                   research problems and accelerate delivery by unblocking teammates.\
                   I aspire to write code that is readable, maintainable, testable \
                   and adherent to standards and conventions.\
                   I'm comfortable working in cross-functional agile teams.
-                  Practices I feel at home with include IaC, CI/CD and TDD. 
+                  Practices I feel at home with include IaC, CI/CD and TDD.
 
- 
-\section{SKILLS} {\sl Languages:} Fluent in Python;
-                familiar with Javascript, C\# and SQL; learning Rust and Go \\
-                {\sl Databases:} PostgreSQL, Redis \\
-                {\sl Tools, Frameworks, etc.:} AWS, Docker, Kubernetes, Linux, OAuth2, Django, Flask, Pytest
 
- 
+\section{SKILLS} {\sl Languages:} Python, Javascript, SQL \\
+                {\sl Technologies:} PostgreSQL, Redis, AWS, Docker, Kubernetes, OAuth2, Django, pytest \\
+                {\sl Working knowledge of:} Rust, Go, C\#, FastAPI, Flask, SQLAlchemy, MongoDB, GCP
+
+
 \section{EXPERIENCE} \textbf{Medtronic Digital Surgery} \\
                 {\sl Senior Software Engineer} \hfill   Feb 2022 - present \\
-                 \begin{itemize}  \itemsep -2pt % reduce space between items
-                   \item Led backend implementation of MFA; followed OAuth 2.0 Best Current Practice. 
-                   \item Documented two approaches to a service layer in the Python codebase; \
-                         added conventions to style guide and enforced some automatically using Semgrep.
-                   \item Automated copying demo content to over 600 staff accounts to aid lead generation. 
+                 \begin{itemize}  \itemsep  -0pt % reduce space between items
+                   \item Led the implementation of MFA in line with OAuth 2.0 Best Current Practice.
+                   \item Documented HTTP API conventions for 40+ person engineering department; \\
+		         added platform style guide emphasising the service layer in Django codebase.
+                   \item Automated copying demo video content to the accounts of 600+ Medtronic staff \\
+                         responsible for selling our enterprise product.
+                   \item Out of hours on-call.
                  \end{itemize}
                 {\sl Platform Engineer} \hfill          Nov 2019 - Feb 2022 \\
-                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                  \item Backend implementation for allowing surgeons to download anonymized videos.
+                  \begin{itemize}  \itemsep -0pt %reduce space between items
+                  \item Solved issues with interaction of different video sharing features; \\
+                        unified video sharing; fixed data integrity; made future sharing features easier.
+                  \item Backend implementation for allowing users to download surgical videos.
                   \item Improved idempotence of an event-driven video processing pipeline. \\
-                        Added auto-generated GraphViz pipeline flow chart to Sphinx docs. 
+                        Added auto-generated GraphViz pipeline flow chart to Sphinx docs.
                   \item Carried out data migrations on hundreds of thousands of live annotation labels.
-                  \end{itemize} 
+                  \end{itemize}
 
                 \textbf{Verv} \\
                 {\sl Python Developer} \hfill        Jun 2019 - Nov 2019 \\
-                  \begin{itemize} \itemsep -2pt %reduce space between items
-                  \item Contributed to POC for Bluetooth-based WiFi setup of IoT device.\ 
-                  \item Added telemetry to device's shadow on AWS IoT Core. 
-                  \end{itemize} 
+                  \begin{itemize} \itemsep -0pt %reduce space between items
+                  \item Contributed to PoC for Bluetooth-based WiFi setup of IoT device.\
+                  \item Added telemetry to device's shadow on AWS IoT Core.
+                  \end{itemize}
 
                 \textbf{Ubiquity Press} \\
                 {\sl Software Developer} \hfill        May 2018 - Jun 2019 \\
-                  \begin{itemize} \itemsep -2pt %reduce space between items
-                  \item Laid groundwork of platform for deploying/managing web applications; \
-                        implemented settings using Zookeeper; RBAC using django-rules$; > $80\% test coverage.
-                  \item Prepared legacy Django apps for CD pipelines using Docker, Kubernetes and Helm. 
+                  \begin{itemize} \itemsep -0pt %reduce space between items
+                  \item Laid groundwork of platform for deploying/managing web applications;
+                        implemented settings using Zookeeper/Redis; RBAC using django-rules$; > $80\% test coverage.
+                  \item Moved legacy Django apps for from manual deployments to CD pipelines \\
+                        using Docker, Kubernetes and Helm.
                   \end{itemize}
-                
+
 	        \textbf{Titan Labs} \\
-                {\sl Software Engineer} \hfill         Sep 2018 - Apr 2019 \\
-                  \begin{itemize} \itemsep -2pt %reduce space between items
+                {\sl Software Engineer} \hfill         Sep 2017 - Apr 2018 \\
+                  \begin{itemize} \itemsep -0pt %reduce space between items
                   \item Implemented POC for recommender system to speed up client consultations.
                   \item Built and documented REST APIs using Flask, marshmallow, webargs, OpenAPI 2.0.
                   \end{itemize}
- 
- 
+
+
 \section{EDUCATION} {\sl MA, Digital Culture} | Goldsmiths, University of London \hfill 2016 - 2017 \\
                     {\sl BA, Fine Art} | Loughborough University\hfill 2009 - 2013
- 
- 
+
+
 \section{INTERESTS} Personal projects: \url{https://github.com/simoncrowe} \\
                     Hobbies: running, strength training, reading, music, art, theatre
- 
+
 
 \end{resume}
 \end{document}
