@@ -1,0 +1,82 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res}
+\usepackage{hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks=true, urlcolor=cyan}
+
+
+\begin{document}
+\name{Simon Crowe | Cloud-Native Software Engineer}
+% \address can be used twice for additional contact info
+\address{}
+\address{\href{mailto://simon.r.crowe@protonmail.com}{simon.r.crowe@protonmail.com}}
+
+
+\begin{resume}
+
+\section{SUMMARY} An engineer with extensive experience building and maintaining
+                  platforms and cloud-native backends, I'm looking for technical challenges
+                  and new opportunities to add value.\
+                  In my day-to-day work, I propagate conventions and best practices\
+                  through code review, refactoring and technical documentation.\
+                  I’m comfortable working in cross-functional agile teams.\
+                  Practices I feel at home with include IaC, CI/CD and TDD.
+
+\section{SKILLS} {\sl Languages:} Python, Javascript, SQL \\
+                {\sl Technologies:} PostgreSQL, Redis, AWS, Terraform, Docker, Kubernetes, OAuth2, Django, pytest \\
+                {\sl Some exposure to:} OIDC, Rust, Go, C\#, FastAPI, Flask, SQLAlchemy, MongoDB, GCP
+
+
+\section{EXPERIENCE} \textbf{Medtronic Digital Surgery} \\
+                {\sl Senior Software Engineer} \hfill   Feb 2022 - present \\
+                 \begin{itemize}  \itemsep  -0pt % reduce space between items
+                   \item Replaced overprivileged AWS IAM user credentials used in all CI/CD pipelines \\
+                         and backend workloads with appropriate roles assumed using OIDC tokens.
+                   \item Re-implemented a legacy Git server used by GGI artists with a simpler architecture \\
+                         that better supported new multi-region Cloud deployments.
+                   \item Led the implementation of MFA in line with OAuth 2.0 Best Current Practice.
+                   \item Out of hours on-call.
+                 \end{itemize}
+                {\sl Platform Engineer} \hfill          Nov 2019 - Feb 2022 \\
+                  \begin{itemize}  \itemsep -0pt %reduce space between items
+                  \item Solved issues with the interaction of different video-sharing features; \\
+                        unified video sharing; fixed data integrity; made future sharing features easier.
+                  \item Backend implementation for allowing users to download surgical videos.
+                  \item Improved the idempotence of an event-driven video processing pipeline. \\
+                        Added auto-generated GraphViz pipeline flow chart to Sphinx docs.
+                  \end{itemize}
+
+                \textbf{Verv} \\
+                {\sl Python Developer} \hfill        Jun 2019 - Nov 2019 \\
+                  \begin{itemize} \itemsep -0pt %reduce space between items
+                  \item Contributed to python codebase of IoT device.\
+                  \item Provided technical assistance on device trials in the UK and internationally.
+                  \end{itemize}
+
+                \textbf{Ubiquity Press} \\
+                {\sl Software Developer} \hfill        May 2018 - Jun 2019 \\
+                  \begin{itemize} \itemsep -0pt %reduce space between items
+                  \item Laid groundwork of platform for deploying/managing web applications;
+                        implemented settings using Zookeeper/Redis; RBAC using django-rules$; > $80\% test coverage.
+                  \item Moved legacy Django apps for from manual deployments to CD pipelines \\
+                        using Docker, Kubernetes and Helm.
+                  \end{itemize}
+
+	        \textbf{Titan Labs} \\
+                {\sl Software Engineer} \hfill         Sep 2017 - Apr 2018 \\
+                  \begin{itemize} \itemsep -0pt %reduce space between items
+                  \item Implemented POC for recommender system to speed up client consultations.
+                  \item Built and documented REST APIs using Flask, marshmallow, webargs, OpenAPI 2.0.
+                  \end{itemize}
+
+
+
+\section{INTERESTS} Personal projects: \url{https://github.com/simoncrowe} \\
+                    Blog: \url{https://simoncrowe.hashnode.dev} \\
+                    Hobbies: running, strength training, reading, music, art, theatre
+
+\section{EDUCATION} {\sl MA, Digital Culture} | Goldsmiths, University of London \hfill 2016 - 2017 \\
+                    {\sl BA, Fine Art} | Loughborough University\hfill 2009 - 2013
+
+\end{resume}
+\end{document}
