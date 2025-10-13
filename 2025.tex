@@ -22,15 +22,17 @@
                   I’m comfortable working in cross-functional agile teams.\
                   Practices I feel at home with include IaC, CI/CD and TDD.
 
-\section{SKILLS} {\sl Languages:} Python, Javascript, SQL \\
-                {\sl Technologies:} PostgreSQL, Redis, AWS, Terraform, Docker, Kubernetes, OAuth2, Django, pytest \\
+\section{SKILLS} {\sl Languages:} Python, Bash, Javascript, SQL \\
+                {\sl Technologies:} PostgreSQL, Redis, AWS, Terraform, Docker, Kafka, Kubernetes, OAuth2, Django, pytest \\
                 {\sl Some exposure to:} OIDC, Rust, Go, C\#, FastAPI, Flask, SQLAlchemy, MongoDB, GCP
 
 
 \section{EXPERIENCE} \textbf{Medtronic Digital Surgery} \\
                 {\sl Senior Software Engineer} \hfill   Feb 2022 - present \\
                  \begin{itemize}  \itemsep  -0pt % reduce space between items
-                   \item Replaced overprivileged AWS IAM user credentials used in all CI/CD pipelines \\
+                   \item Wrote PoC video processing orchestrator with GPU support, enabling the same video \\
+                         workload to be run at 6\% of the cost in under a fifth of the time.
+                   \item Replaced overprivileged AWS IAM user credentials used in CI/CD pipelines \\
                          and backend workloads with appropriate roles assumed using OIDC tokens.
                    \item Re-implemented a legacy Git server used by GGI artists with a simpler architecture \\
                          that better supported new multi-region Cloud deployments.
@@ -42,8 +44,6 @@
                   \item Solved issues with the interaction of different video-sharing features; \\
                         unified video sharing; fixed data integrity; made future sharing features easier.
                   \item Backend implementation for allowing users to download surgical videos.
-                  \item Improved the idempotence of an event-driven video processing pipeline. \\
-                        Added auto-generated GraphViz pipeline flow chart to Sphinx docs.
                   \end{itemize}
 
                 \textbf{Verv} \\
