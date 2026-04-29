@@ -32,9 +32,8 @@
 \section{EXPERIENCE} \textbf{Medtronic Digital Surgery} \\
                 {\sl Senior Software Engineer} \hfill   Feb 2022 - present \\
                  \begin{itemize}  \itemsep  -0pt
-                   \item Designed and implemented a video processing orchestrator using Kubernetes, FastAPI and Kafka
-                         that replaced AWS MediaConvert in 97\% of cases, saving an estimated \$280,000 annually.
-                         Instrumented the service with OpenTelemetry distributed tracing and structured logging throughout.
+                   \item Designed and implemented a video processing orchestrator (Kubernetes, FastAPI, Kafka) that replaced AWS MediaConvert in 97\% of cases. Saved ~\$280K/year, equivalent to 13\% of the Surgical operating unit's FY26 cloud spend.
+                   \item Instrumented the orchestrator with OpenTelemetry distributed tracing and structured logging from the outset, enabling fault diagnosis without persistent job state.
                    \item Migrated Kafka topic management to Strimzi topic operator, replacing single-partition topics
                          with properly scaled configurations to support parallel consumers.
                          Switched cluster authentication from MTLS (which had become costly and ineffective) to IAM.
