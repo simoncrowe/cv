@@ -2,7 +2,7 @@
 \documentclass[line,margin]{res}
 \usepackage{hyperref}
 \usepackage{enumitem}
-\setlist[itemize]{topsep=-4pt, partopsep=0pt, itemsep=3pt, parsep=0pt}
+\setlist[itemize]{topsep=-5pt, partopsep=0pt, itemsep=2pt, parsep=0pt}
 \renewcommand{\familydefault}{\sfdefault}
 \hypersetup{colorlinks=true, urlcolor=cyan}
 
@@ -30,8 +30,10 @@
                          of the Surgical operating unit's FY26 cloud spend.
                    \item Instrumented the orchestrator with OpenTelemetry distributed tracing and structured logging
                          from the outset, enabling fault diagnosis without persistent job state.
-                   \item Developed a fault-tolerant serverless solution for sending S3 objects to HTTP APIs as a
-                         reusable Terraform module, adopted by multiple teams for event delivery to the data platform.
+                   \item Re-architected GPU workload scheduling (ML inference and ffmpeg) to run across multiple
+                         availability zones, removing a single-AZ availability bottleneck.
+                   \item Developed a fault-tolerant serverless Terraform module for delivering S3 objects to HTTP APIs,
+                         adopted by multiple teams to feed the data platform.
                    \item Re-architected a legacy Git/LFS assets server for multi-region cloud deployments.
                    \item Re-wrote legacy video processing integration tests in pytest, replacing an ad-hoc Python script.
                          Reduced worst-case failure feedback time from 90 to 30 minutes.
